@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 public class FeedController {
     private final FeedService feedService;
 
+    
     // CREATE
     @PostMapping("/feeds/")
     public ResponseEntity<FeedResponse> createFeed(@RequestBody @Valid FeedRequest requestDto) {
