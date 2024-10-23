@@ -8,7 +8,6 @@ import com.sparta.newsfeed.friend.repository.FriendRepository;
 import com.sparta.newsfeed.user.repository.UserRepository;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,7 +17,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class FriendService {
 
-    @Autowired
     private final FriendRepository friendRepository;
     private final UserRepository userRepository;
 

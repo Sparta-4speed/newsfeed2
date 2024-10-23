@@ -24,7 +24,7 @@ public class Friend extends Timestamped {
     @JoinColumn(name = "friend_id")
     private Users toUser;
 
-//    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING)
     private FriendshipStatus status;
 
     @Builder
